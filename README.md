@@ -186,13 +186,6 @@ By completing this project, you’ll learn how to:
 
 ---
 
-## ❤️ Bonus Tip
-
-When uploading this project to GitHub, **do not include your `.env` file**.  
-Add it to `.gitignore` to keep your database credentials safe.
-
----
-
 ## 👨‍💻 Author
 
 **Senesh Pawan**  
