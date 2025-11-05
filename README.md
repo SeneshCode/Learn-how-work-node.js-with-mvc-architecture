@@ -52,25 +52,20 @@ npm install
 
 ## 🗃️ 4. Database Configuration
 
-### Step 1 — Create a MySQL Database
+This project already includes a pre-configured `.env` file with all required settings.  
+Please make sure your MySQL server is running and the values inside `.env` match your local setup.
 
-Open your MySQL terminal or Workbench and run:
-
-```sql
-CREATE DATABASE your_database_name;
-```
-
-### Step 2 — Configure `.env` file
-
-In your project root, create a `.env` file and add:
+Example `.env` (already provided in project):
 
 ```env
-PORT=3000
+PORT=5000
 DB_HOST=localhost
 DB_USER=root
-DB_PASSWORD=your_password
-DB_NAME=your_database_name
+DB_PASSWORD=your_password_here
+DB_NAME=task_manager
 ```
+
+If you change the database name or password, update them here accordingly.
 
 ---
 
@@ -92,7 +87,7 @@ task-manager-project/
 │   └── taskRoutes.js        # Express routes for API
 │
 ├── app.js                   # Main application file
-├── .env                     # Environment configuration
+├── .env                     # Environment configuration (already included)
 ├── package.json             # Project metadata and dependencies
 └── package-lock.json
 ```
@@ -111,7 +106,7 @@ If everything is correct, you’ll see messages like:
 
 ```
 ✅ Database connected and synced successfully
-🚀 Server running at http://localhost:3000
+🚀 Server running at http://localhost:5000
 ```
 
 ---
@@ -149,6 +144,7 @@ If everything is correct, you’ll see messages like:
 
 ### `app.js`
 - Initializes the Express server  
+- Loads environment variables from `.env`  
 - Connects to the database using Sequelize  
 - Syncs models with MySQL  
 - Uses middleware to handle JSON and URL-encoded data  
