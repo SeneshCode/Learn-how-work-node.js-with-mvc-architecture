@@ -196,5 +196,5 @@ Add it to `.gitignore` to keep your database credentials safe.
 ## 👨‍💻 Author
 
 **Your Name Here**  
-📧 your.email@example.com  
-🌐 GitHub: [https://github.com/yourusername](https://github.com/yourusername)
+📧 senesh.development@gmail.com  
+🌐 GitHub: [SeneshCode](https://github.com/SeneshCode)
